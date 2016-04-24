@@ -7,21 +7,39 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C449D621CCD17B900ED8A3E /* SaveRouteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C449D611CCD17B900ED8A3E /* SaveRouteViewController.swift */; };
+		9C449D641CCD1FEE00ED8A3E /* Ruta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C449D631CCD1FEE00ED8A3E /* Ruta.swift */; };
+		9C449D661CCD28B100ED8A3E /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C449D651CCD28B100ED8A3E /* WebViewViewController.swift */; };
 		9C54B1601CCB8CC000AF011C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B15F1CCB8CC000AF011C /* AppDelegate.swift */; };
-		9C54B1621CCB8CC000AF011C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1611CCB8CC000AF011C /* ViewController.swift */; };
+		9C54B1621CCB8CC000AF011C /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1611CCB8CC000AF011C /* MenuViewController.swift */; };
 		9C54B1651CCB8CC000AF011C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C54B1631CCB8CC000AF011C /* Main.storyboard */; };
 		9C54B1671CCB8CC000AF011C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9C54B1661CCB8CC000AF011C /* Assets.xcassets */; };
 		9C54B16A1CCB8CC000AF011C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9C54B1681CCB8CC000AF011C /* LaunchScreen.storyboard */; };
+		9C54B1731CCB910100AF011C /* RutaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1721CCB910100AF011C /* RutaViewController.swift */; };
+		9C54B1761CCB912B00AF011C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1751CCB912B00AF011C /* BackgroundView.swift */; };
+		9C54B1781CCB976D00AF011C /* PtoInteresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1771CCB976D00AF011C /* PtoInteresViewController.swift */; };
+		9C54B17B1CCB9C5E00AF011C /* PtoInteres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B17A1CCB9C5E00AF011C /* PtoInteres.swift */; };
+		9CD643CC1CCD2B2700D09392 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD643CB1CCD2B2700D09392 /* QRViewController.swift */; };
+		9CD643CE1CCD30C900D09392 /* QRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD643CD1CCD30C900D09392 /* QRNavigationController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C449D611CCD17B900ED8A3E /* SaveRouteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SaveRouteViewController.swift; sourceTree = "<group>"; };
+		9C449D631CCD1FEE00ED8A3E /* Ruta.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruta.swift; sourceTree = "<group>"; };
+		9C449D651CCD28B100ED8A3E /* WebViewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
 		9C54B15C1CCB8CC000AF011C /* ProyectoFinalCoursera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProyectoFinalCoursera.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C54B15F1CCB8CC000AF011C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9C54B1611CCB8CC000AF011C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9C54B1611CCB8CC000AF011C /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		9C54B1641CCB8CC000AF011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9C54B1661CCB8CC000AF011C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9C54B1691CCB8CC000AF011C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9C54B16B1CCB8CC000AF011C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9C54B1721CCB910100AF011C /* RutaViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RutaViewController.swift; sourceTree = "<group>"; };
+		9C54B1751CCB912B00AF011C /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
+		9C54B1771CCB976D00AF011C /* PtoInteresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtoInteresViewController.swift; sourceTree = "<group>"; };
+		9C54B17A1CCB9C5E00AF011C /* PtoInteres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtoInteres.swift; sourceTree = "<group>"; };
+		9CD643CB1CCD2B2700D09392 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		9CD643CD1CCD30C900D09392 /* QRNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRNavigationController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +72,47 @@
 		9C54B15E1CCB8CC000AF011C /* ProyectoFinalCoursera */ = {
 			isa = PBXGroup;
 			children = (
+				9C54B1791CCB9C4600AF011C /* Modelo */,
+				9C54B1741CCB910B00AF011C /* View */,
+				9C54B1711CCB90BE00AF011C /* Controller */,
 				9C54B15F1CCB8CC000AF011C /* AppDelegate.swift */,
-				9C54B1611CCB8CC000AF011C /* ViewController.swift */,
 				9C54B1631CCB8CC000AF011C /* Main.storyboard */,
 				9C54B1661CCB8CC000AF011C /* Assets.xcassets */,
 				9C54B1681CCB8CC000AF011C /* LaunchScreen.storyboard */,
 				9C54B16B1CCB8CC000AF011C /* Info.plist */,
 			);
 			path = ProyectoFinalCoursera;
+			sourceTree = "<group>";
+		};
+		9C54B1711CCB90BE00AF011C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9C54B1721CCB910100AF011C /* RutaViewController.swift */,
+				9C54B1771CCB976D00AF011C /* PtoInteresViewController.swift */,
+				9C449D611CCD17B900ED8A3E /* SaveRouteViewController.swift */,
+				9C449D651CCD28B100ED8A3E /* WebViewViewController.swift */,
+				9CD643CB1CCD2B2700D09392 /* QRViewController.swift */,
+				9CD643CD1CCD30C900D09392 /* QRNavigationController.swift */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		9C54B1741CCB910B00AF011C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9C54B1751CCB912B00AF011C /* BackgroundView.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		9C54B1791CCB9C4600AF011C /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				9C54B1611CCB8CC000AF011C /* MenuViewController.swift */,
+				9C54B17A1CCB9C5E00AF011C /* PtoInteres.swift */,
+				9C449D631CCD1FEE00ED8A3E /* Ruta.swift */,
+			);
+			name = Modelo;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +147,7 @@
 				TargetAttributes = {
 					9C54B15B1CCB8CC000AF011C = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = YH9NMWWMRD;
 					};
 				};
 			};
@@ -135,8 +187,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9C54B1621CCB8CC000AF011C /* ViewController.swift in Sources */,
+				9C449D621CCD17B900ED8A3E /* SaveRouteViewController.swift in Sources */,
+				9CD643CC1CCD2B2700D09392 /* QRViewController.swift in Sources */,
+				9C449D641CCD1FEE00ED8A3E /* Ruta.swift in Sources */,
+				9C54B1781CCB976D00AF011C /* PtoInteresViewController.swift in Sources */,
+				9C54B1621CCB8CC000AF011C /* MenuViewController.swift in Sources */,
+				9C54B17B1CCB9C5E00AF011C /* PtoInteres.swift in Sources */,
 				9C54B1601CCB8CC000AF011C /* AppDelegate.swift in Sources */,
+				9C54B1761CCB912B00AF011C /* BackgroundView.swift in Sources */,
+				9C449D661CCD28B100ED8A3E /* WebViewViewController.swift in Sources */,
+				9C54B1731CCB910100AF011C /* RutaViewController.swift in Sources */,
+				9CD643CE1CCD30C900D09392 /* QRNavigationController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,10 +310,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoFinalCoursera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = josmanperez.ProyectoFinalCoursera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -260,10 +324,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = ProyectoFinalCoursera/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = josmanperez.ProyectoFinalCoursera;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -286,6 +353,7 @@
 				9C54B1701CCB8CC000AF011C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
