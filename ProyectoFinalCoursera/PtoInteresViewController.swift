@@ -46,6 +46,10 @@ class PtoInteresViewController: UIViewController, UIImagePickerControllerDelegat
     
   }
   
+  override func  preferredStatusBarStyle()-> UIStatusBarStyle {
+    return UIStatusBarStyle.LightContent
+  }
+  
   @IBAction func textFieldDoneEditing(sender : UITextField) {
     sender.resignFirstResponder()
   }
@@ -76,6 +80,9 @@ class PtoInteresViewController: UIViewController, UIImagePickerControllerDelegat
     picker.dismissViewControllerAnimated(true, completion: nil)
   }
   
+  @IBAction func exitPto() {
+    self.dismissViewControllerAnimated(true, completion: nil)
+  }
   
   @IBAction func anadirPto() {
     
@@ -84,10 +91,14 @@ class PtoInteresViewController: UIViewController, UIImagePickerControllerDelegat
       //print("imagen: \(imagenPunto)")
       //print("lat: \(coordenadas!.latitude)")
       
-      communicationDelegate?.setPunto(nombre.text!, imagen: imagenPunto, coordenadas: coordenadas!)
+      if let coor = coordenadas {
+        communicationDelegate?.setPunto(nombre.text!, imagen: imagenPunto, coordenadas: coor)
+        self.dismissViewControllerAnimated(true, completion: nil)
+      } else {
+        self.dismissViewControllerAnimated(true, completion: nil)
+
+      }
       
-      
-      self.dismissViewControllerAnimated(true, completion: nil)
     } else {
       let alert = UIAlertController(title: "Por favor introduce un nombre", message: "Debes introducir un nombre como mínimo para guardar el punto de interés", preferredStyle: UIAlertControllerStyle.ActionSheet)
       alert.addAction(UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default, handler:{ (ACTION :UIAlertAction!)in

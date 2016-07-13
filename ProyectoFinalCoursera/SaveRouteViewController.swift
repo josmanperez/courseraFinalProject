@@ -39,6 +39,10 @@ class SaveRouteViewController: UIViewController, UIImagePickerControllerDelegate
     
   }
   
+  override func  preferredStatusBarStyle()-> UIStatusBarStyle {
+    return UIStatusBarStyle.LightContent
+  }
+  
   @IBAction func backgroundTap(sender: UIControl) {
     self.nombreTextField.resignFirstResponder()
     self.descripcionTextField.resignFirstResponder()
@@ -67,6 +71,10 @@ class SaveRouteViewController: UIViewController, UIImagePickerControllerDelegate
     self.imagenPunto = image
     picker.dismissViewControllerAnimated(true, completion: nil)
     
+  }
+  
+  @IBAction func exitRoute() {
+    self.dismissViewControllerAnimated(true, completion: nil)
   }
   
   @IBAction func anadir(sender: AnyObject) {
