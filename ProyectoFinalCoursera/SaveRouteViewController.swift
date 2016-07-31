@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 protocol SaveRouteControllerDelegate {
   func saveRoute(nombre: String, descripcion: String, imagen: UIImage?)
@@ -25,11 +26,15 @@ class SaveRouteViewController: UIViewController, UIImagePickerControllerDelegate
   private let miPicker = UIImagePickerController()
   
   var imagenPunto:UIImage?
-    
+  
   var communicationDelegate:SaveRouteControllerDelegate?
+  
+  var contexto:NSManagedObjectContext? = nil
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    
+    self.contexto = (UIApplication.sharedApplication().delegate as! AppDelegate).managedObjectContext
     
     if (!UIImagePickerController.isSourceTypeAvailable(.Camera)) {
       camaraBoton.hidden = true
@@ -37,6 +42,34 @@ class SaveRouteViewController: UIViewController, UIImagePickerControllerDelegate
     
     miPicker.delegate = self
     
+  }
+  
+  func guardarBD() {
+    
+    let nuevaSeccionEntidad = NSEntityDescription.insertNewObjectForEntityForName("Rutas", inManagedObjectContext: self.contexto!)
+    print("nombre: \(nombreTextField.text)")
+    if let nombre = nombreTextField.text {
+      nuevaSeccionEntidad.setValue(nombre, forKey: "nombre")
+    } else {
+      nuevaSeccionEntidad.setValue("nombre", forKey: "nombre")
+    }
+    print("desc: \(descripcionTextField.text)")
+    if let desc = descripcionTextField.text {
+      nuevaSeccionEntidad.setValue(desc, forKey: "descripcion")
+    } else {
+      nuevaSeccionEntidad.setValue("descripcion", forKey: "descripcion")
+    }
+    print("ima: \(imagenPunto)")
+    if let imagen = imagenPunto {
+      nuevaSeccionEntidad.setValue(UIImagePNGRepresentation(imagen), forKey: "imagen")
+    } else {
+      nuevaSeccionEntidad.setValue(UIImagePNGRepresentation(UIImage(named: "default")!), forKey: "imagen")
+    }
+    do {
+      try self.contexto?.save()
+    } catch {
+      print("error al salvar en la BD")
+    }
   }
   
   override func  preferredStatusBarStyle()-> UIStatusBarStyle {
@@ -55,7 +88,7 @@ class SaveRouteViewController: UIViewController, UIImagePickerControllerDelegate
   @IBAction func descripcionDoneEditing(sender : UITextField) {
     sender.resignFirstResponder()
   }
-
+  
   @IBAction func anadirFotoCamara(sender: AnyObject) {
     miPicker.sourceType = UIImagePickerControllerSourceType.Camera
     presentViewController(miPicker, animated: true, completion: nil)
@@ -79,8 +112,9 @@ class SaveRouteViewController: UIViewController, UIImagePickerControllerDelegate
   
   @IBAction func anadir(sender: AnyObject) {
     if (nombreTextField.text?.characters.count > 0 && descripcionTextField.text?.characters.count > 0) {
-            
+      
       dismissViewControllerAnimated(true, completion: nil)
+      guardarBD()
       communicationDelegate?.saveRoute(nombreTextField.text!, descripcion: descripcionTextField.text!, imagen: imagenPunto)
       
     } else {

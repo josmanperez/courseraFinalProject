@@ -16,13 +16,19 @@ class Ruta {
   var descripcion:String
   var imagen:UIImage?
   
-  var rutas:[MKMapItem]
+  var rutas:[MKMapItem]?
   
   init(nombre:String, descripcion:String, imagen:UIImage?, rutas:[MKMapItem]) {
     self.nombre = nombre
     self.descripcion = descripcion
     self.imagen = imagen
     self.rutas = rutas
+  }
+  
+  init(nombre:String, descripcion:String, imagen:UIImage?) {
+    self.nombre = nombre
+    self.descripcion = descripcion
+    self.imagen = imagen
   }
   
 }

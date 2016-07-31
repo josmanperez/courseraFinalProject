@@ -11,7 +11,7 @@ import CoreLocation
 import MapKit
 
 class RutaViewController: UIViewController, MKMapViewDelegate, CLLocationManagerDelegate,
-CommunicationControllerDelegate, SaveRouteControllerDelegate {
+CommunicationControllerDelegate, SaveRouteControllerDelegate, ARDataSource {
   
   @IBOutlet weak var mapa: MKMapView!
   
@@ -44,6 +44,47 @@ CommunicationControllerDelegate, SaveRouteControllerDelegate {
     print("nombre ruta: \(ruta?.nombre)")
     
     
+  }
+  
+  func ar(arViewController: ARViewController, viewForAnnotation: ARAnnotation) -> ARAnnotationView {
+   
+    let vista = TestAnnotationView()
+    vista.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
+    vista.frame = CGRect(x: 0, y: 0, width: 150, height: 60)
+    
+    return vista
+  }
+  
+  @IBAction func iniciarAR() {
+    
+    let puntoInteres = obtenerAnotaciones()
+    let arViewController = ARViewController()
+    arViewController.debugEnabled = true
+    arViewController.dataSource = self
+    arViewController.maxDistance = 0
+    arViewController.maxVisibleAnnotations = 100
+    arViewController.maxVerticalLevel = 5
+    arViewController.headingSmoothingFactor = 0.05
+    arViewController.trackingManager.userDistanceFilter = 25
+    arViewController.trackingManager.reloadDistanceFilter = 75
+    
+    arViewController.setAnnotations(puntoInteres)
+    self.presentViewController(arViewController, animated: true, completion: nil)
+  }
+
+  
+  func obtenerAnotaciones() -> [ARAnnotation] {
+    var anotaciones:[ARAnnotation] = []
+    
+    for punto in listaPtoInteres {
+      let anotacion = ARAnnotation()
+      anotacion.location = CLLocation(latitude: punto.coordenadas.latitude, longitude: punto.coordenadas.longitude)
+      anotacion.title = punto.nombre
+      anotaciones.append(anotacion)
+      print("lat: \(punto.coordenadas.latitude) para nombre: \(punto.nombre) ")
+    }
+    
+    return anotaciones
   }
   
   func obtenerLocalizacion() {

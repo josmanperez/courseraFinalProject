@@ -19,8 +19,31 @@
 		9C54B1761CCB912B00AF011C /* BackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1751CCB912B00AF011C /* BackgroundView.swift */; };
 		9C54B1781CCB976D00AF011C /* PtoInteresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B1771CCB976D00AF011C /* PtoInteresViewController.swift */; };
 		9C54B17B1CCB9C5E00AF011C /* PtoInteres.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C54B17A1CCB9C5E00AF011C /* PtoInteres.swift */; };
+		9C6E45121D470AB000EEDB5E /* AcercaDe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C6E45111D470AB000EEDB5E /* AcercaDe.swift */; };
+		9C8CF3881D4AE09E00977E39 /* VerRutasCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CF3871D4AE09E00977E39 /* VerRutasCell.swift */; };
+		9C8CF38A1D4AE0AC00977E39 /* VerRutasTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C8CF3891D4AE0AC00977E39 /* VerRutasTableViewController.swift */; };
 		9CD643CC1CCD2B2700D09392 /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD643CB1CCD2B2700D09392 /* QRViewController.swift */; };
 		9CD643CE1CCD30C900D09392 /* QRNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CD643CD1CCD30C900D09392 /* QRNavigationController.swift */; };
+		9CE706341D4811B600F43345 /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706331D4811B600F43345 /* Evento.swift */; };
+		9CE7063B1D48187700F43345 /* ARAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706361D48187700F43345 /* ARAnnotation.swift */; };
+		9CE7063C1D48187700F43345 /* ARAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706371D48187700F43345 /* ARAnnotationView.swift */; };
+		9CE7063D1D48187700F43345 /* ARConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706381D48187700F43345 /* ARConfiguration.swift */; };
+		9CE7063E1D48187700F43345 /* ARTrackingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706391D48187700F43345 /* ARTrackingManager.swift */; };
+		9CE7063F1D48187700F43345 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7063A1D48187700F43345 /* ARViewController.swift */; };
+		9CE706421D48189100F43345 /* DebugMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706411D48189100F43345 /* DebugMapViewController.swift */; };
+		9CE706481D4818B100F43345 /* DebugMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9CE706441D4818B100F43345 /* DebugMapViewController.xib */; };
+		9CE706491D4818B100F43345 /* hdar_close.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE706451D4818B100F43345 /* hdar_close.png */; };
+		9CE7064A1D4818B100F43345 /* hdar_close@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE706461D4818B100F43345 /* hdar_close@2x.png */; };
+		9CE7064B1D4818B100F43345 /* hdar_close@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 9CE706471D4818B100F43345 /* hdar_close@3x.png */; };
+		9CE7064D1D48193200F43345 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE7064C1D48193200F43345 /* CoreLocation.framework */; };
+		9CE7064F1D48193800F43345 /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE7064E1D48193800F43345 /* CoreMotion.framework */; };
+		9CE706511D48194500F43345 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9CE706501D48194500F43345 /* MapKit.framework */; };
+		9CE706531D481B5000F43345 /* TestAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706521D481B5000F43345 /* TestAnnotationView.swift */; };
+		9CE706561D48340200F43345 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706541D48340200F43345 /* Model.xcdatamodeld */; };
+		9CE7065A1D483B3700F43345 /* EventosTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706591D483B3700F43345 /* EventosTableViewController.swift */; };
+		9CE7065C1D483C4800F43345 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE7065B1D483C4800F43345 /* SwiftyJSON.swift */; };
+		9CE706601D48400200F43345 /* eventos.json in Resources */ = {isa = PBXBuildFile; fileRef = 9CE7065F1D48400200F43345 /* eventos.json */; };
+		9CE706621D48414800F43345 /* EventosCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9CE706611D48414800F43345 /* EventosCellTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,8 +61,31 @@
 		9C54B1751CCB912B00AF011C /* BackgroundView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BackgroundView.swift; sourceTree = "<group>"; };
 		9C54B1771CCB976D00AF011C /* PtoInteresViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtoInteresViewController.swift; sourceTree = "<group>"; };
 		9C54B17A1CCB9C5E00AF011C /* PtoInteres.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PtoInteres.swift; sourceTree = "<group>"; };
+		9C6E45111D470AB000EEDB5E /* AcercaDe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AcercaDe.swift; sourceTree = "<group>"; };
+		9C8CF3871D4AE09E00977E39 /* VerRutasCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerRutasCell.swift; sourceTree = "<group>"; };
+		9C8CF3891D4AE0AC00977E39 /* VerRutasTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VerRutasTableViewController.swift; sourceTree = "<group>"; };
 		9CD643CB1CCD2B2700D09392 /* QRViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
 		9CD643CD1CCD30C900D09392 /* QRNavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRNavigationController.swift; sourceTree = "<group>"; };
+		9CE706331D4811B600F43345 /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		9CE706361D48187700F43345 /* ARAnnotation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotation.swift; sourceTree = "<group>"; };
+		9CE706371D48187700F43345 /* ARAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARAnnotationView.swift; sourceTree = "<group>"; };
+		9CE706381D48187700F43345 /* ARConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARConfiguration.swift; sourceTree = "<group>"; };
+		9CE706391D48187700F43345 /* ARTrackingManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARTrackingManager.swift; sourceTree = "<group>"; };
+		9CE7063A1D48187700F43345 /* ARViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
+		9CE706411D48189100F43345 /* DebugMapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMapViewController.swift; sourceTree = "<group>"; };
+		9CE706441D4818B100F43345 /* DebugMapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DebugMapViewController.xib; sourceTree = "<group>"; };
+		9CE706451D4818B100F43345 /* hdar_close.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hdar_close.png; sourceTree = "<group>"; };
+		9CE706461D4818B100F43345 /* hdar_close@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@2x.png"; sourceTree = "<group>"; };
+		9CE706471D4818B100F43345 /* hdar_close@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "hdar_close@3x.png"; sourceTree = "<group>"; };
+		9CE7064C1D48193200F43345 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		9CE7064E1D48193800F43345 /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = System/Library/Frameworks/CoreMotion.framework; sourceTree = SDKROOT; };
+		9CE706501D48194500F43345 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		9CE706521D481B5000F43345 /* TestAnnotationView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestAnnotationView.swift; sourceTree = "<group>"; };
+		9CE706551D48340200F43345 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		9CE706591D483B3700F43345 /* EventosTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosTableViewController.swift; sourceTree = "<group>"; };
+		9CE7065B1D483C4800F43345 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		9CE7065F1D48400200F43345 /* eventos.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = eventos.json; sourceTree = "<group>"; };
+		9CE706611D48414800F43345 /* EventosCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventosCellTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +93,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9CE706511D48194500F43345 /* MapKit.framework in Frameworks */,
+				9CE7064F1D48193800F43345 /* CoreMotion.framework in Frameworks */,
+				9CE7064D1D48193200F43345 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +105,9 @@
 		9C54B1531CCB8CC000AF011C = {
 			isa = PBXGroup;
 			children = (
+				9CE706501D48194500F43345 /* MapKit.framework */,
+				9CE7064E1D48193800F43345 /* CoreMotion.framework */,
+				9CE7064C1D48193200F43345 /* CoreLocation.framework */,
 				9C54B15E1CCB8CC000AF011C /* ProyectoFinalCoursera */,
 				9C54B15D1CCB8CC000AF011C /* Products */,
 			);
@@ -72,11 +124,17 @@
 		9C54B15E1CCB8CC000AF011C /* ProyectoFinalCoursera */ = {
 			isa = PBXGroup;
 			children = (
+				9CE7065F1D48400200F43345 /* eventos.json */,
+				9CE7065B1D483C4800F43345 /* SwiftyJSON.swift */,
+				9CE706521D481B5000F43345 /* TestAnnotationView.swift */,
+				9CE706431D48189B00F43345 /* Resources */,
+				9CE706351D48185600F43345 /* Classes */,
 				9C54B1791CCB9C4600AF011C /* Modelo */,
 				9C54B1741CCB910B00AF011C /* View */,
 				9C54B1711CCB90BE00AF011C /* Controller */,
 				9C54B15F1CCB8CC000AF011C /* AppDelegate.swift */,
 				9C54B1631CCB8CC000AF011C /* Main.storyboard */,
+				9CE706541D48340200F43345 /* Model.xcdatamodeld */,
 				9C54B1661CCB8CC000AF011C /* Assets.xcassets */,
 				9C54B1681CCB8CC000AF011C /* LaunchScreen.storyboard */,
 				9C54B16B1CCB8CC000AF011C /* Info.plist */,
@@ -93,6 +151,11 @@
 				9C449D651CCD28B100ED8A3E /* WebViewViewController.swift */,
 				9CD643CB1CCD2B2700D09392 /* QRViewController.swift */,
 				9CD643CD1CCD30C900D09392 /* QRNavigationController.swift */,
+				9C6E45111D470AB000EEDB5E /* AcercaDe.swift */,
+				9CE706591D483B3700F43345 /* EventosTableViewController.swift */,
+				9CE706611D48414800F43345 /* EventosCellTableViewCell.swift */,
+				9C8CF3871D4AE09E00977E39 /* VerRutasCell.swift */,
+				9C8CF3891D4AE0AC00977E39 /* VerRutasTableViewController.swift */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -111,8 +174,41 @@
 				9C54B1611CCB8CC000AF011C /* MenuViewController.swift */,
 				9C54B17A1CCB9C5E00AF011C /* PtoInteres.swift */,
 				9C449D631CCD1FEE00ED8A3E /* Ruta.swift */,
+				9CE706331D4811B600F43345 /* Evento.swift */,
 			);
 			name = Modelo;
+			sourceTree = "<group>";
+		};
+		9CE706351D48185600F43345 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				9CE706401D48188400F43345 /* Debug */,
+				9CE706361D48187700F43345 /* ARAnnotation.swift */,
+				9CE706371D48187700F43345 /* ARAnnotationView.swift */,
+				9CE706381D48187700F43345 /* ARConfiguration.swift */,
+				9CE706391D48187700F43345 /* ARTrackingManager.swift */,
+				9CE7063A1D48187700F43345 /* ARViewController.swift */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		9CE706401D48188400F43345 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+				9CE706411D48189100F43345 /* DebugMapViewController.swift */,
+			);
+			name = Debug;
+			sourceTree = "<group>";
+		};
+		9CE706431D48189B00F43345 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				9CE706441D4818B100F43345 /* DebugMapViewController.xib */,
+				9CE706451D4818B100F43345 /* hdar_close.png */,
+				9CE706461D4818B100F43345 /* hdar_close@2x.png */,
+				9CE706471D4818B100F43345 /* hdar_close@3x.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,8 +271,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C54B16A1CCB8CC000AF011C /* LaunchScreen.storyboard in Resources */,
+				9CE706491D4818B100F43345 /* hdar_close.png in Resources */,
+				9CE7064B1D4818B100F43345 /* hdar_close@3x.png in Resources */,
 				9C54B1671CCB8CC000AF011C /* Assets.xcassets in Resources */,
+				9CE706601D48400200F43345 /* eventos.json in Resources */,
 				9C54B1651CCB8CC000AF011C /* Main.storyboard in Resources */,
+				9CE7064A1D4818B100F43345 /* hdar_close@2x.png in Resources */,
+				9CE706481D4818B100F43345 /* DebugMapViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,13 +289,28 @@
 			buildActionMask = 2147483647;
 			files = (
 				9C449D621CCD17B900ED8A3E /* SaveRouteViewController.swift in Sources */,
+				9CE706531D481B5000F43345 /* TestAnnotationView.swift in Sources */,
+				9CE7063E1D48187700F43345 /* ARTrackingManager.swift in Sources */,
+				9CE7065C1D483C4800F43345 /* SwiftyJSON.swift in Sources */,
+				9CE7063B1D48187700F43345 /* ARAnnotation.swift in Sources */,
+				9CE7063F1D48187700F43345 /* ARViewController.swift in Sources */,
 				9CD643CC1CCD2B2700D09392 /* QRViewController.swift in Sources */,
 				9C449D641CCD1FEE00ED8A3E /* Ruta.swift in Sources */,
+				9CE7063C1D48187700F43345 /* ARAnnotationView.swift in Sources */,
+				9CE706341D4811B600F43345 /* Evento.swift in Sources */,
 				9C54B1781CCB976D00AF011C /* PtoInteresViewController.swift in Sources */,
 				9C54B1621CCB8CC000AF011C /* MenuViewController.swift in Sources */,
+				9C8CF3881D4AE09E00977E39 /* VerRutasCell.swift in Sources */,
+				9C6E45121D470AB000EEDB5E /* AcercaDe.swift in Sources */,
 				9C54B17B1CCB9C5E00AF011C /* PtoInteres.swift in Sources */,
 				9C54B1601CCB8CC000AF011C /* AppDelegate.swift in Sources */,
+				9CE7063D1D48187700F43345 /* ARConfiguration.swift in Sources */,
+				9CE706621D48414800F43345 /* EventosCellTableViewCell.swift in Sources */,
+				9CE706421D48189100F43345 /* DebugMapViewController.swift in Sources */,
+				9C8CF38A1D4AE0AC00977E39 /* VerRutasTableViewController.swift in Sources */,
 				9C54B1761CCB912B00AF011C /* BackgroundView.swift in Sources */,
+				9CE706561D48340200F43345 /* Model.xcdatamodeld in Sources */,
+				9CE7065A1D483B3700F43345 /* EventosTableViewController.swift in Sources */,
 				9C449D661CCD28B100ED8A3E /* WebViewViewController.swift in Sources */,
 				9C54B1731CCB910100AF011C /* RutaViewController.swift in Sources */,
 				9CD643CE1CCD30C900D09392 /* QRNavigationController.swift in Sources */,
@@ -356,6 +472,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9CE706541D48340200F43345 /* Model.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9CE706551D48340200F43345 /* Model.xcdatamodel */,
+			);
+			currentVersion = 9CE706551D48340200F43345 /* Model.xcdatamodel */;
+			path = Model.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9C54B1541CCB8CC000AF011C /* Project object */;
 }
