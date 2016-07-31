@@ -524,11 +524,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ejV-sK-oH5">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="ejV-sK-oH5">
                                 <rect key="frame" x="0.0" y="64" width="320" height="464"/>
                             </mapView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2m-3p-3ed">
-                                <rect key="frame" x="20" y="530" width="89" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V2m-3p-3ed">
+                                <rect key="frame" x="8" y="530" width="89" height="30"/>
                                 <state key="normal" title="Añadir Punto">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -536,17 +536,15 @@
                                     <action selector="anadirPtoInteres" destination="0zo-tJ-hQe" eventType="touchUpInside" id="RkY-HA-MNe"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InG-Xw-3Og">
-                                <rect key="frame" x="270" y="530" width="30" height="30"/>
-                                <state key="normal" title="QR">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="InG-Xw-3Og">
+                                <rect key="frame" x="292" y="533" width="24" height="24"/>
+                                <state key="normal" image="share"/>
                                 <connections>
-                                    <segue destination="mTP-AS-JLU" kind="presentation" identifier="QRModally" id="Qfj-gy-51f"/>
+                                    <action selector="compartir" destination="0zo-tJ-hQe" eventType="touchUpInside" id="yd9-k6-c69"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJR-Mw-4Ou">
-                                <rect key="frame" x="123" y="530" width="91" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJR-Mw-4Ou">
+                                <rect key="frame" x="115" y="530" width="91" height="30"/>
                                 <state key="normal" title="Guardar Ruta">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -554,30 +552,23 @@
                                     <action selector="anadirRuta" destination="0zo-tJ-hQe" eventType="touchUpInside" id="OmR-Ad-X8W"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="z60-IB-PVy">
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="z60-IB-PVy">
                                 <rect key="frame" x="0.0" y="64" width="320" height="37"/>
                                 <subviews>
-                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="1EB-l8-ssh">
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" style="white" translatesAutoresizingMaskIntoConstraints="NO" id="1EB-l8-ssh">
                                         <rect key="frame" x="230" y="9" width="20" height="20"/>
                                         <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </activityIndicatorView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculando ruta.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-0f-usN">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculando ruta.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWW-0f-usN">
                                         <rect key="frame" x="82" y="10" width="107" height="18"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue-Thin" family="Helvetica Neue" pointSize="15"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
-                                <constraints>
-                                    <constraint firstItem="1EB-l8-ssh" firstAttribute="centerY" secondItem="z60-IB-PVy" secondAttribute="centerY" id="AKK-0r-Fyi"/>
-                                    <constraint firstItem="CWW-0f-usN" firstAttribute="centerX" secondItem="z60-IB-PVy" secondAttribute="centerX" constant="-25" id="Emu-Wp-az5"/>
-                                    <constraint firstItem="1EB-l8-ssh" firstAttribute="centerX" secondItem="z60-IB-PVy" secondAttribute="centerX" constant="80" id="jXX-bI-zZV"/>
-                                    <constraint firstItem="CWW-0f-usN" firstAttribute="centerY" secondItem="z60-IB-PVy" secondAttribute="centerY" id="tIR-62-GWV"/>
-                                    <constraint firstAttribute="height" constant="37" id="zLB-yS-1jG"/>
-                                </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-qX-rcv">
-                                <rect key="frame" x="227" y="530" width="30" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LcO-qX-rcv">
+                                <rect key="frame" x="214" y="530" width="30" height="30"/>
                                 <state key="normal" title="RA">
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
@@ -585,24 +576,17 @@
                                     <action selector="iniciarAR" destination="0zo-tJ-hQe" eventType="touchUpInside" id="xUh-L9-Fh1"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EZq-xf-loZ">
+                                <rect key="frame" x="251" y="530" width="30" height="30"/>
+                                <state key="normal" title="QR">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.35294117650000001" green="0.73333333329999995" blue="0.70980392160000005" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="QLO-6t-wNo" firstAttribute="top" secondItem="LcO-qX-rcv" secondAttribute="bottom" constant="8" id="4Yc-bt-PDK"/>
-                            <constraint firstItem="QLO-6t-wNo" firstAttribute="top" secondItem="lJR-Mw-4Ou" secondAttribute="bottom" constant="8" id="Aai-cH-9EN"/>
-                            <constraint firstItem="ejV-sK-oH5" firstAttribute="top" secondItem="b6x-Pk-Jkz" secondAttribute="bottom" id="H3P-Tk-dIT"/>
-                            <constraint firstItem="QLO-6t-wNo" firstAttribute="top" secondItem="V2m-3p-3ed" secondAttribute="bottom" constant="8" id="U46-hl-YK4"/>
-                            <constraint firstItem="QLO-6t-wNo" firstAttribute="top" secondItem="InG-Xw-3Og" secondAttribute="bottom" constant="8" id="Ua9-tW-j8U"/>
-                            <constraint firstItem="lJR-Mw-4Ou" firstAttribute="centerX" secondItem="r93-TU-wnY" secondAttribute="centerX" constant="8.5" id="Vgj-Ir-3xs"/>
-                            <constraint firstItem="InG-Xw-3Og" firstAttribute="centerX" secondItem="r93-TU-wnY" secondAttribute="centerX" constant="125" id="cPV-Sc-4gp"/>
-                            <constraint firstItem="z60-IB-PVy" firstAttribute="top" secondItem="b6x-Pk-Jkz" secondAttribute="bottom" id="d98-og-ZQg"/>
-                            <constraint firstItem="LcO-qX-rcv" firstAttribute="centerX" secondItem="r93-TU-wnY" secondAttribute="centerX" constant="82" id="exX-0b-nbD"/>
-                            <constraint firstItem="QLO-6t-wNo" firstAttribute="top" secondItem="ejV-sK-oH5" secondAttribute="bottom" constant="40" id="htp-Cv-Eik"/>
-                            <constraint firstAttribute="trailing" secondItem="ejV-sK-oH5" secondAttribute="trailing" id="nlW-Ry-yGf"/>
-                            <constraint firstItem="ejV-sK-oH5" firstAttribute="leading" secondItem="r93-TU-wnY" secondAttribute="leading" id="odb-mJ-DGv"/>
-                            <constraint firstItem="z60-IB-PVy" firstAttribute="leading" secondItem="r93-TU-wnY" secondAttribute="leading" id="v3d-P8-svK"/>
-                            <constraint firstItem="V2m-3p-3ed" firstAttribute="centerX" secondItem="r93-TU-wnY" secondAttribute="centerX" constant="-95.5" id="wN1-Ee-zXA"/>
-                            <constraint firstAttribute="trailing" secondItem="z60-IB-PVy" secondAttribute="trailing" id="yUt-ih-4BR"/>
+                            <constraint firstItem="QLO-6t-wNo" firstAttribute="top" secondItem="InG-Xw-3Og" secondAttribute="bottom" constant="11" id="XiU-Cn-KG2"/>
+                            <constraint firstItem="InG-Xw-3Og" firstAttribute="centerX" secondItem="r93-TU-wnY" secondAttribute="centerX" constant="144" id="nB3-kP-Q10"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
@@ -817,10 +801,10 @@
         <image name="eventos" width="24" height="24"/>
         <image name="qr" width="36" height="36"/>
         <image name="rutas" width="36" height="36"/>
+        <image name="share" width="24" height="24"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="Qfj-gy-51f"/>
-        <segue reference="M9b-TM-5nc"/>
         <segue reference="4Oa-1Y-3n3"/>
+        <segue reference="M9b-TM-5nc"/>
     </inferredMetricsTieBreakers>
 </document>

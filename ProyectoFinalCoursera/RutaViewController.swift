@@ -47,7 +47,7 @@ CommunicationControllerDelegate, SaveRouteControllerDelegate, ARDataSource {
   }
   
   func ar(arViewController: ARViewController, viewForAnnotation: ARAnnotation) -> ARAnnotationView {
-   
+    
     let vista = TestAnnotationView()
     vista.backgroundColor = UIColor.blackColor().colorWithAlphaComponent(0.5)
     vista.frame = CGRect(x: 0, y: 0, width: 150, height: 60)
@@ -71,7 +71,7 @@ CommunicationControllerDelegate, SaveRouteControllerDelegate, ARDataSource {
     arViewController.setAnnotations(puntoInteres)
     self.presentViewController(arViewController, animated: true, completion: nil)
   }
-
+  
   
   func obtenerAnotaciones() -> [ARAnnotation] {
     var anotaciones:[ARAnnotation] = []
@@ -131,6 +131,28 @@ CommunicationControllerDelegate, SaveRouteControllerDelegate, ARDataSource {
     //print("lat: \(manager.location?.coordinate.latitude) long: \(manager.location?.coordinate.longitude)")
     self.coordenadas = manager.location?.coordinate
   }
+  
+  @IBAction func compartir() {
+    
+    let textoC = "Lista de puntos: "
+    var textoP = ""
+    
+    for punto in listaPtoInteres {
+      textoP += " \(punto.nombre) "
+    }
+    
+    if listaPtoInteres.count > 1 {
+      let actividad = UIActivityViewController(activityItems: [textoC,textoP], applicationActivities: nil)
+      self.presentViewController(actividad, animated: true, completion: nil)
+      
+    } else {
+      let alert = UIAlertController(title: "No puedo", message: "No puedes compartir puntos porque no has definido ninguno", preferredStyle: UIAlertControllerStyle.ActionSheet)
+      alert.addAction(UIAlertAction(title: "Accept", style: UIAlertActionStyle.Default, handler:{ (ACTION :UIAlertAction!)in
+      }))
+      self.presentViewController(alert, animated: true, completion: nil)
+    }
+  }
+  
   
   // MARK: - PtoInteres
   func setPunto(nombre: String, imagen: UIImage?, coordenadas: CLLocationCoordinate2D) {
@@ -219,7 +241,7 @@ CommunicationControllerDelegate, SaveRouteControllerDelegate, ARDataSource {
   }
   
   func mapView(mapView: MKMapView, viewForAnnotation annotation: MKAnnotation) -> MKAnnotationView? {
-
+    
     if annotation is MKUserLocation {
       return nil
     }
