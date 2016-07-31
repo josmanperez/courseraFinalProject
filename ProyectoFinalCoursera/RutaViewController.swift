@@ -141,7 +141,7 @@ CommunicationControllerDelegate, SaveRouteControllerDelegate, ARDataSource {
       textoP += " \(punto.nombre) "
     }
     
-    if listaPtoInteres.count > 1 {
+    if listaPtoInteres.count > 0 {
       let actividad = UIActivityViewController(activityItems: [textoC,textoP], applicationActivities: nil)
       self.presentViewController(actividad, animated: true, completion: nil)
       
